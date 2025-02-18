@@ -5,8 +5,8 @@ import tractorImage from "../assets/Picture3.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center text-white bg-black h-[500px]">
-      <img className="absolute inset-0 object-cover w-full h-full opacity-50" src={tractorImage} alt="tractor" />
+    <section className="relative flex flex-col items-center justify-center text-center  rounded-t-[30px] text-white bg-black h-[500px]">
+      <img className="absolute inset-0 object-cover rounded-t-[30px] w-full h-full opacity-50" src={tractorImage} alt="tractor" />
       
       <div className="relative z-10 px-6 py-16 md:py-24">
         <Infobox info="AI in Agriculture" background_color="white" />

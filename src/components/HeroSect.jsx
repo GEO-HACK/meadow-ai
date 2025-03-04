@@ -13,7 +13,7 @@ export default function LandingSection() {
   };
 
   return (
-    <div className="flex flex-col justify-between   min-h-fit px-10 rounded-b-[30px] bg-[#A3A847]  overflow-hidden">
+    <div className="flex flex-col justify-between   min-h-fit px-10  bg-[#A3A847]  overflow-hidden">
       {/* Landing Information Section */}
       <div className="flex flex-col items-center p-4 sm:px-32">
         <div className="flex flex-wrap justify-between mb-12 max-w-[1100px] h-28 w-full">

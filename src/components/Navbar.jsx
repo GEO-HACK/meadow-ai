@@ -7,6 +7,16 @@ const Navbar = () => {
   return (
     <div className="flex flex-row justify-between items-center p-4">
       {/* nav section */}
+      <Link to="/">
+          <p className="text-2xl font-bold text-gray-600">
+            Meadow <span className="text-green-600">AI</span>
+          </p>
+        </Link>
+
+      {/* logo section */}
+
+      <div className="flex items-center">
+      
       <nav className="flex flex-row justify-between items-center">
         <Link to="/" className="hover:bg-gray-200 px-3 py-2 rounded-md">
           Home
@@ -21,15 +31,6 @@ const Navbar = () => {
           Contact
         </Link>
       </nav>
-
-      {/* logo section */}
-
-      <div className="flex items-center">
-        <Link to="/">
-          <p className="text-2xl font-bold text-gray-600">
-            Meadow <span className="text-green-600">AI</span>
-          </p>
-        </Link>
       </div>
       {/* contact section */}
       <div className="flex items-center space-x-4">

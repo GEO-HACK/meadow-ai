@@ -77,7 +77,7 @@ const Services = () => {
         />
       </div>
     </div>
-    <div><p className="font-bold text-3xl mb-6 border-b-1 border-green-500">Frequently Asked Questions</p></div>
+    <div><p className="font-bold text-3xl mb-6 border-b-1 border-green-500">Meadow Ai FAQ</p></div>
     <CustomAccordion />
    </div>
   );

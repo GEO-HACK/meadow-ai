@@ -42,7 +42,7 @@ const Navbar = () => {
         <Button
           text="Get In Touch"
           color="#EDDD5E"
-          link="https://github.com/VictorCodebase"
+          link="https://github.com/MeedowDev"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { MountainSnow,Telescope,Gem } from "lucide-react";
+import { MountainSnow, Telescope, Gem } from "lucide-react";
 
 const About = () => {
   const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
@@ -76,32 +76,46 @@ const About = () => {
       </motion.div>
 
       {/* Second Content Section with New Text */}
-      <section className="p-4 mt-5 h-screen bg-[url('/africa.png')]  bg-cover bg-center">
-        <div className="flex flex-row justify-evenly p-4  items-center">
-          <div className="w-[350px]  flex flex-col items-start gap-4 bg-amber-100 p-5 rounded-lg">
-            <MountainSnow size={60} className="text-green-600 " />
-            <h1 className="font-bold text-amber-800 text-4xl ">mission</h1>
-            <p className="text-gray-600">
+      <section className="p-4 mt-5 h-[600px] bg-[url('/africa.png')] bg-cover bg-center">
+        <div className="flex flex-row justify-evenly p-4 items-center">
+          <div className="w-[350px] flex flex-col items-center gap-5 bg-amber-100 p-5 rounded-lg transition-all duration-300 group hover:bg-amber-500">
+            <MountainSnow
+              size={60}
+              className="text-green-600 group-hover:text-white"
+            />
+            <h1 className="font-bold text-amber-800 text-4xl group-hover:text-white">
+              mission
+            </h1>
+            <p className="text-gray-600 group-hover:text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
               exercitationem iusto similique dicta eum voluptatem, quidem
               debitis molestias nostrum, distinctio illo fugit nesciunt
               aspernatur, ratione fuga? Laboriosam tempore tenetur sit!
             </p>
           </div>
-          <div className="w-[350px] flex flex-col items-start mt-20 gap-4 bg-red-100 p-5 rounded-lg">
-            <Telescope size={60} className="text-green-600 " />
-            <h1 className="font-bold text-amber-800 text-4xl ">vision</h1>
-            <p className="text-gray-600">
+
+          <div className="w-[350px] flex flex-col items-center mt-20 gap-5 bg-red-100 p-5 rounded-lg transition-all duration-300 group hover:bg-red-500">
+            <Telescope
+              size={60}
+              className="text-green-600 group-hover:text-white"
+            />
+            <h1 className="font-bold text-amber-800 text-4xl group-hover:text-white">
+              vision
+            </h1>
+            <p className="text-gray-600 group-hover:text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
               exercitationem iusto similique dicta eum voluptatem, quidem
               debitis molestias nostrum, distinctio illo fugit nesciunt
               aspernatur, ratione fuga? Laboriosam tempore tenetur sit!
             </p>
           </div>
-          <div className="w-[350px] flex flex-col items-start mt-40 gap-4 bg-blue-100 p-5 rounded-lg">
-            <Gem size={60} className="text-green-600 " />
-            <h1 className="font-bold text-amber-800 text-4xl ">value</h1>
-            <p className="text-gray-600">
+
+          <div className="w-[350px] flex flex-col items-center mt-40 gap-5 bg-blue-100 p-5 rounded-lg transition-all duration-300 group hover:bg-blue-500">
+            <Gem size={60} className="text-green-600 group-hover:text-white" />
+            <h1 className="font-bold text-amber-800 text-4xl group-hover:text-white">
+              value
+            </h1>
+            <p className="text-gray-600 group-hover:text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
               exercitationem iusto similique dicta eum voluptatem, quidem
               debitis molestias nostrum, distinctio illo fugit nesciunt
@@ -110,8 +124,50 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section>
-        
+
+      <section className="  bg-gray-50 h-[600px]">
+        <div className="flex flex-col items-center p-4">
+          <h1 className="text-green-400 font-bold text-4xl">Why Us</h1>
+          <div className="grid grid-cols-2  gap-4 mt-6">
+            <div className="bg-white w-[400px]  p-4 gap-3">
+              <h1  className="font-bold text-lg">hello this is the secion</h1>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
+                nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
+                quasi optio at vel eligendi omnis quia?
+              </p>
+            </div>
+            <div className="bg-white w-[400px] p-4 gap-3 ">
+              <h1  className="font-bold text-lg">hello this is the secion</h1>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
+                nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
+                quasi optio at vel eligendi omnis quia?
+              </p>
+            </div>
+            <div className="bg-white w-[400px] p-4 gap-3">
+              <h1  className="font-bold text-lg">hello this is the secion</h1>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
+                nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
+                quasi optio at vel eligendi omnis quia?
+              </p>
+            </div>
+            <div className="bg-white w-[400px] p-4 gap-3 ">
+              <h1  className="font-bold text-lg">hello this is the secion</h1>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
+                nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
+                quasi optio at vel eligendi omnis quia?
+              </p>
+            </div>
+
+          </div>
+        </div>
       </section>
     </div>
   );

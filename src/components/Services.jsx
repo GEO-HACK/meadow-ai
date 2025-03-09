@@ -29,8 +29,8 @@ const AnimatedCard = ({ icon, title, description }) => {
       {/* Content */}
       <div className="relative z-10 transition-colors mt-4 mb-5">
         {icon}
-        <h1 className="font-bold text-2xl transition-colors"> {title} </h1>
-        <p className="text-md transition-colors"> {description} </p>
+        <h1 className="font-bold text-2xl transition-colors mt-4"> {title} </h1>
+        <p className="text-md transition-colors mt-3"> {description} </p>
       </div>
     </motion.div>
   );

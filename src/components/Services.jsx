@@ -17,7 +17,7 @@ const AnimatedCard = ({ icon, title, description }) => {
     >
       
       <motion.div
-        className="absolute inset-0"
+        className="absolute inset-0 bg-green-200"
         variants={{
           initial: { scaleX: 0, scaleY: 0, originX: 1, originY: 1 },
           hover: { scaleX: 1, scaleY: 1, transition: { duration: 0.4, ease: "easeInOut" } },
@@ -27,10 +27,10 @@ const AnimatedCard = ({ icon, title, description }) => {
       />
 
       {/* Content */}
-      <div className="relative z-10 transition-colors mt-4 mb-5">
+      <div className="relative z-10 transition-colors mt-4 mb-5 ">
         {icon}
-        <h1 className="font-bold text-2xl transition-colors mt-4"> {title} </h1>
-        <p className="text-md transition-colors mt-3"> {description} </p>
+        <h1 className="font-semibold text-gray-500 text-2xl transition-colors mt-4"> {title} </h1>
+        <p className="text-sm text-gray-600 transition-colors mt-3"> {description} </p>
       </div>
     </motion.div>
   );

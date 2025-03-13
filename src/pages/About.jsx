@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MountainSnow, Telescope, Gem } from "lucide-react";
+import Team from "../components/Team";
 
 const About = () => {
   const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
@@ -125,50 +126,58 @@ const About = () => {
         </div>
       </section>
 
-      <section className="  bg-gray-50 h-[600px]">
+      <section className="bg-gray-50 h-[600px]">
         <div className="flex flex-col items-center p-4">
           <h1 className="text-green-400 font-bold text-4xl">Why Us</h1>
-          <div className="grid grid-cols-2  gap-4 mt-6">
-            <div className="bg-white w-[400px]  p-4 gap-3">
-              <h1  className="font-bold text-lg">hello this is the secion</h1>
-              <p className="text-gray-600 text-sm mt-2">
+          <div className="grid grid-cols-2 gap-4 mt-6">
+            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+              <h1 className="font-bold text-lg text-gray-500 hover:text-white">
+                Hello, this is the section
+              </h1>
+              <p className="text-gray-600 text-md mt-2 hover:text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
                 nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3 ">
-              <h1  className="font-bold text-lg">hello this is the secion</h1>
-              <p className="text-gray-600 text-sm mt-2">
+            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+              <h1 className="font-bold text-lg text-gray-500 hover:text-white">
+                Hello, this is the section
+              </h1>
+              <p className="text-gray-600 text-md mt-2 hover:text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
                 nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3">
-              <h1  className="font-bold text-lg">hello this is the secion</h1>
-              <p className="text-gray-600 text-sm mt-2">
+            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+              <h1 className="font-bold text-lg text-gray-500 hover:text-white">
+                Hello, this is the section
+              </h1>
+              <p className="text-gray-600 text-md mt-2 hover:text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
                 nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3 ">
-              <h1  className="font-bold text-lg">hello this is the secion</h1>
-              <p className="text-gray-600 text-sm mt-2">
+            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+              <h1 className="font-bold text-lg text-gray-500 hover:text-white">
+                Hello, this is the section
+              </h1>
+              <p className="text-gray-600 text-md mt-2 hover:text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Necessitatibus, dolorem quisquam. Voluptatum tenetur fugit quasi
                 nostrum debitis! Molestiae sit atque tenetur explicabo, dicta
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-
           </div>
         </div>
       </section>
+      <Team/>
     </div>
   );
 };

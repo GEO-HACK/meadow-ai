@@ -20,16 +20,16 @@ const CustomAccordion = () => {
   ];
 
   return (
-    <Accordion.Root type="single" collapsible className="w-[60%] ">
+    <Accordion.Root type="single" collapsible className="flex flex-col items-between w-full max-w-3xl">  
       {faqs.map((faq, index) => (
         <Accordion.Item key={index} value={`item-${index + 1}`} className="border-b border-green-700">
           <Accordion.Header>
-            <Accordion.Trigger className="flex justify-between items-center w-full p-3 rounded-md text-left text-lg font-medium">
+            <Accordion.Trigger className="flex justify-between text-gray-50 items-center w-full p-3 rounded-md text-left text-lg font-medium">
               {faq.question}
               <AccordionChevron />
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content className="p-3 text-gray-600">{faq.answer}</Accordion.Content>
+          <Accordion.Content className="p-3 text-gray-50">{faq.answer}</Accordion.Content>
         </Accordion.Item>
       ))}
     </Accordion.Root>

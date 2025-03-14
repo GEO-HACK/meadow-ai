@@ -16,7 +16,7 @@ const About = () => {
     <div>
       {/* Hero Section with Video Background */}
 
-      <div className="relative min-h-[300px]">
+      {/* <div className="relative min-h-[300px]">
         <video
           src="/video.mp4"
           autoPlay
@@ -35,7 +35,7 @@ const About = () => {
             <h1 className="text-4xl font-bold">About Us</h1>
           </motion.div>
         </section>
-      </div>
+      </div> */}
 
       {/* First Content Section */}
       <motion.div

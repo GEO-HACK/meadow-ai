@@ -92,7 +92,7 @@ const Services = () => {
       </div>
 
       {/* FAQ Section */}
-      <section className="relative z-10 flex flex-col items-center w-[80%] justify-center min-h-max mt-10 gap-6 bg-black/60 border border-gray-800 backdrop-blur-md p-6 rounded-xl shadow-lg">
+      <section className="relative z-10 flex flex-col items-center w-[80%] justify-center min-h-max mt-10 mb-3 gap-6 bg-black/60 border border-gray-800 backdrop-blur-md p-6 rounded-xl shadow-lg">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-green-400 border-b-2 border-green-500 inline-block pb-1">
             Frequently Asked Questions

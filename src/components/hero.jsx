@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center rounded-t-[30px] text-white bg-black h-[500px] overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center text-center rounded-t-[30px] text-white m-8 bg-black h-[500px] overflow-hidden">
       <motion.img 
         className="absolute inset-0 object-cover rounded-t-[30px] w-full h-full opacity-50"
         src={tractorImage} 

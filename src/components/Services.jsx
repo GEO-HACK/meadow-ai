@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Activity, Droplets, CloudSunRain, TrendingUpDown } from "lucide-react";
 import CustomAccordion from "./Accordion";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 
 const AnimatedCard = ({ icon, title, description }) => {
   return (
@@ -30,28 +28,11 @@ const AnimatedCard = ({ icon, title, description }) => {
 };
 
 const Services = () => {
-  const particlesInit = async (engine) => {
-    await loadFull(engine);
-  };
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-950 overflow-hidden">
       {/* Particles Background */}
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          background: { color: "transparent" },
-          particles: {
-            number: { value: 60 },
-            size: { value: 3 },
-            color: { value: "#00ff99" },
-            move: { enable: true, speed: 1 },
-            links: { enable: true, color: "#00ff99", distance: 150 },
-          },
-        }}
-        className="absolute inset-0 z-0"
-      />
+
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center text-center">

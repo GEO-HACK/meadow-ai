@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MountainSnow, Telescope, Gem } from "lucide-react";
 import Team from "../components/Team";
+import InvestorsSection from "../components/Investors";
 
 const About = () => {
   const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
@@ -128,11 +129,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-gray-950 h-[600px]">
+      <section className="bg-gray-950 py-10">
         <div className="flex flex-col items-center p-4">
           <h1 className="text-green-400 font-bold text-4xl">Why Us</h1>
-          <div className="grid grid-cols-2 gap-4 mt-6">
-            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <div className="bg-white w-full max-w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
               <h1 className="font-bold text-lg text-gray-500 hover:text-white">
                 Hello, this is the section
               </h1>
@@ -143,7 +144,7 @@ const About = () => {
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+            <div className="bg-white w-full max-w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
               <h1 className="font-bold text-lg text-gray-500 hover:text-white">
                 Hello, this is the section
               </h1>
@@ -154,7 +155,7 @@ const About = () => {
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+            <div className="bg-white w-full max-w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
               <h1 className="font-bold text-lg text-gray-500 hover:text-white">
                 Hello, this is the section
               </h1>
@@ -165,7 +166,7 @@ const About = () => {
                 quasi optio at vel eligendi omnis quia?
               </p>
             </div>
-            <div className="bg-white w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
+            <div className="bg-white w-full max-w-[400px] p-4 gap-3 cursor-pointer transition-all duration-300 hover:bg-gradient-to-r from-green-400 to-green-600 hover:text-white">
               <h1 className="font-bold text-lg text-gray-500 hover:text-white">
                 Hello, this is the section
               </h1>
@@ -180,6 +181,7 @@ const About = () => {
         </div>
       </section>
       <Team/>
+      <InvestorsSection/>
     </div>
   );
 };

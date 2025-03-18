@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../assets/img-01.png";
-import image2 from "../assets/img-02.png";
+import image from "/farmer.jpg";
+import image2 from "/image.jpg";
 import { motion } from "framer-motion";
 
 const Landing = () => {
@@ -21,7 +21,7 @@ const Landing = () => {
           <img
             src={image2}
             alt="Farmer with oranges"
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
+            className="w-full h-[500px] object-cover rounded-lg shadow-lg"
           />
         </motion.div>
 
@@ -36,7 +36,7 @@ const Landing = () => {
             <img
               src={image}
               alt="Gardening"
-              className="w-full h-auto object-cover rounded-lg shadow-lg"
+              className="w-full h-[180px] object-cover rounded-lg shadow-lg"
             />
           </motion.div>
 

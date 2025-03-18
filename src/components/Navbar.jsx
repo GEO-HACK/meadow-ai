@@ -32,10 +32,10 @@ const Navbar = () => {
           Journey
         </Link>
         <Link
-          to="/contact"
+          to="/blog"
           className="text-gray-700 hover:text-green-600 transition-colors font-medium"
         >
-          Contact
+          Blog
         </Link>
       </div>
     </div>

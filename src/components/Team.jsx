@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 export default function TeamSection() {
   const teamData = [
-    { id: 1, name: "DR. LAWRENCE NDERU", role: "Lead Developer", image: "/about.jpg", description: "Alice is an expert in AI and blockchain, leading our core development team." },
-    { id: 2, name: "MARKVICTOR KITHINJI", role: "UX Designer", image: "/about.jpg", description: "John specializes in futuristic design systems and immersive UI experiences." },
-    { id: 3, name: "SAMUEL GICHEHA", role: "Machine Learning Engineer", image: "/about.jpg", description: "Emma builds cutting-edge AI models and ensures data-driven decision-making." },
-    { id: 4, name: "ALLAN NJOROGE", role: "Cybersecurity Expert", image: "/about.jpg", description: "Michael secures our platforms with state-of-the-art encryption techniques." },
-    { id: 5, name: "TERESIAH MUTHONI", role: "Product Manager", image: "/about.jpg", description: "Sophia oversees project execution and ensures timely delivery of features." },
-    { id: 6, name: "GEOFFREY KIRUMBA", role: "Full-Stack Developer", image: "/about.jpg", description: "Daniel bridges frontend and backend development for seamless integration." },
+    { id: 1, name: "DR. LAWRENCE NDERU", role: "lead", image: "/about.jpg", description: "Alice is an expert in AI and blockchain, leading our core development team.",url:"https://www.linkedin.com/in/lawrence-nderu-0b0b3b1b/" },
+    { id: 2, name: "MARKVICTOR KITHINJI", role: "Project Manager", image: "/about.jpg", description: "John specializes in futuristic design systems and immersive UI experiences.",url:"https://www.linkedin.com/in/markvictor-kithinji-0b0b3b1b/" },
+    { id: 3, name: "SAMUEL GICHEHA", role: "Data Analyst", image: "/about.jpg", description: "Emma builds cutting-edge AI models and ensures data-driven decision-making.",url:"https://www.linkedin.com/in/samuel-gicheha-0b0b3b1b/" },
+    { id: 4, name: "ALLAN NJOROGE", role: "Mobile Developee", image: "/about.jpg", description: "Michael secures our platforms with state-of-the-art encryption techniques.",url:"https://www.linkedin.com/in/allan-njoroge-0b0b3b1b/" },
+    { id: 5, name: "TERESIAH MUTHONI", role: "Data Analyst", image: "/about.jpg", description: "Sophia oversees project execution and ensures timely delivery of features.",url:"https://www.linkedin.com/in/teresiah-muthoni-0b0b3b1b/" },
+    { id: 6, name: "GEOFFREY KIRUMBA", role: "Full-Stack Developer", image: "/about.jpg", description: "Daniel bridges frontend and backend development for seamless integration.",url:"https://www.linkedin.com/in/geoffrey-kirumba-0b0b3b1b/" },
   ];
 
  
@@ -44,7 +44,7 @@ export default function TeamSection() {
                 <h3 className="text-xl font-semibold text-green-400">{member.name}</h3>
                 <p className="text-green-300">{member.role}</p>
                 <p className="mt-2 text-gray-400 text-sm">{member.description}</p>
-                <Link to="#" className="mt-4">
+                <Link to={member.url} className="mt-4">
                   <LinkedIn className="text-green-400 mt-2 cursor-pointer hover:text-green-300 transition duration-300" />
                 </Link>
               </div>

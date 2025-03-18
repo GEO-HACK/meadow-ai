@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Activity, Droplets, CloudSunRain, TrendingUpDown } from "lucide-react";
 import CustomAccordion from "./Accordion";
+import journey from "./journey";
+import Journey from "./journey";
 
 const AnimatedCard = ({ icon, title, description }) => {
   return (
@@ -28,11 +30,9 @@ const AnimatedCard = ({ icon, title, description }) => {
 };
 
 const Services = () => {
-
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-950 overflow-hidden">
       {/* Particles Background */}
-
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center text-center">
@@ -71,6 +71,11 @@ const Services = () => {
           />
         </div>
       </div>
+      <section className=" flex items-center justify-center w-[100%] mt-6">
+        <div>
+          <Journey />
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="relative z-10 flex flex-col items-center w-[80%] justify-center min-h-max mt-10 mb-3 gap-6 bg-black/60 border border-gray-800 backdrop-blur-md p-6 rounded-xl shadow-lg">
@@ -82,6 +87,7 @@ const Services = () => {
             Find answers to commonly asked questions about Meadow AI.
           </p>
         </div>
+
         <div className>
           <CustomAccordion />
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = () => {
+const Journey = () => {
   return (
     <div>
       <h1 className="text-center text-4xl font-bold text-gray-50 mt-10">
@@ -15,12 +15,12 @@ const Services = () => {
 
       <section className="flex flex-raw justify-center mt-10 text-gray-50  gap-5 px-8">
         <div className="flex-1">
-          <img src="/about.jpg" alt="" className="w-[500px] h-[400px]" />
+          <img src="/about.jpg" alt="" className="w-[600px] h-[400px]" />
         </div>
         <div className="flex-1">
-          <h1>Problem Discovery & Industry Research</h1>
-          <h2>Understanding the challenge</h2>
-          <p>
+          <h1 className="text-2xl font-semibold text-green-400 mb-3">Problem Discovery & Industry Research</h1>
+          <h2 className="text-xl font-semibold">Understanding the challenge</h2>
+          <p className="text-md mb-2">
             Agriculture is the backbone of many economies, yet farmers and
             agribusinesses face significant challenges, including unpredictable
             weather patterns, inefficient resource allocation, and limited
@@ -29,10 +29,10 @@ const Services = () => {
             for small-scale farmers to leverage technology for decision-making.
           </p>
 
-          <h2>Market Research & Validation</h2>
+          <h2 className="text-xl font-semibold">Market Research & Validation</h2>
           <p>
             To better understand the gaps in the market, our team:
-            <ol>
+            <ol className="ml-5 py-2 text-sm"> 
               <li>
                 ✅ Conducted field research by visiting multiple farms and
                 agribusinesses
@@ -62,4 +62,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Journey;

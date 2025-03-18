@@ -16,10 +16,10 @@ export default function LandingSection() {
     <div className="flex flex-col justify-between min-h-screen px-10 bg-black text-white overflow-hidden">
       {/* Header Section */}
       <div className="flex flex-col items-center p-6 sm:px-32">
-        <div className="flex flex-wrap justify-between items-center mb-12 max-w-[1100px] w-full">
+        <div className="flex flex-wrap justify-between items-center  max-w-[1100px] w-full">
           
           {/* Title & Description */}
-          <div className="flex flex-col justify-center text-center sm:text-left">
+          {/* <div className="flex flex-col justify-center text-center sm:text-left">
             <motion.h1 
               className="text-4xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: -20 }} 
@@ -38,7 +38,7 @@ export default function LandingSection() {
             </motion.p>
           </div>
 
-          {/* Install App */}
+          
           <motion.div 
             className="flex flex-col items-end"
             initial={{ opacity: 0, x: 20 }} 
@@ -61,22 +61,22 @@ export default function LandingSection() {
                 </motion.div>
               ))}
             </Stack>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Scroll Down Button */}
-        <motion.div
+        {/* <motion.div
           className="cursor-pointer flex items-center justify-center h-16 w-16 bg-white bg-opacity-10 rounded-full shadow-md transition-all hover:scale-105"
           onClick={() => navigateTo("#info-card")}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <ArrowDownwardIcon className="text-green-400" />
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Landing Section */}
-      <div className="flex flex-col items-center justify-center mt-8">
+      <div className="flex flex-col items-center justify-center ">
         <Landing />
       </div>
     </div>

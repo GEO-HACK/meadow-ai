@@ -63,7 +63,7 @@ const About = () => {
           <h1 className="text-3xl font-bold text-green-500">About us</h1>
 
           <h1 className="text-4xl font-semibold">
-            The Idea Behind{" "}
+            {" "}
             <span className="border-b-2 border-green-600">
               Meadow <span className="text-green-600">AI</span>
             </span>

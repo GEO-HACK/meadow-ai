@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 export default function TeamSection() {
   const teamData = [
-    { id: 1, name: "DR. LAWRENCE NDERU", role: "lead", image: "/about.jpg", description: "Alice is an expert in AI and blockchain, leading our core development team.",url:"https://www.linkedin.com/in/lawrence-nderu-0b0b3b1b/" },
-    { id: 2, name: "MARKVICTOR KITHINJI", role: "Project Manager", image: "/about.jpg", description: "John specializes in futuristic design systems and immersive UI experiences.",url:"https://www.linkedin.com/in/markvictor-kithinji-0b0b3b1b/" },
-    { id: 3, name: "SAMUEL GICHEHA", role: "Data Analyst", image: "/about.jpg", description: "Emma builds cutting-edge AI models and ensures data-driven decision-making.",url:"https://www.linkedin.com/in/samuel-gicheha-0b0b3b1b/" },
-    { id: 4, name: "ALLAN NJOROGE", role: "Mobile Developee", image: "/about.jpg", description: "Michael secures our platforms with state-of-the-art encryption techniques.",url:"https://www.linkedin.com/in/allan-njoroge-0b0b3b1b/" },
-    { id: 5, name: "TERESIAH MUTHONI", role: "Data Analyst", image: "/about.jpg", description: "Sophia oversees project execution and ensures timely delivery of features.",url:"https://www.linkedin.com/in/teresiah-muthoni-0b0b3b1b/" },
-    { id: 6, name: "GEOFFREY KIRUMBA", role: "Full-Stack Developer", image: "/about.jpg", description: "Daniel bridges frontend and backend development for seamless integration.",url:"https://www.linkedin.com/in/geoffrey-kirumba-0b0b3b1b/" },
+    { id: 1, name: "DR. LAWRENCE NDERU", role: "lead", image: "/about.jpg", description: "Dr.Lawrence is an expert in AI and blockchain, leading our core development team.",url:"https://www.linkedin.com/in/lawrence-nderu-0b0b3b1b/" },
+    { id: 2, name: "MARKVICTOR KITHINJI", role: "Project Manager", image: "/about.jpg", description: "Mark specializes in futuristic design systems and immersive UI experiences.",url:"https://www.linkedin.com/in/markvictor-kithinji-0b0b3b1b/" },
+    { id: 3, name: "SAMUEL GICHEHA", role: "Data Analyst", image: "/about.jpg", description: "Samuel builds cutting-edge AI models and ensures data-driven decision-making.",url:"https://www.linkedin.com/in/samuel-gicheha-0b0b3b1b/" },
+    { id: 4, name: "ALLAN NJOROGE", role: "Mobile Developee", image: "/about.jpg", description: "Allan secures our platforms with state-of-the-art encryption techniques.",url:"https://www.linkedin.com/in/allan-njoroge-0b0b3b1b/" },
+    { id: 5, name: "TERESIAH MUTHONI", role: "Data Analyst", image: "/about.jpg", description: "Teresiah oversees project execution and ensures timely delivery of features.",url:"https://www.linkedin.com/in/teresiah-muthoni-0b0b3b1b/" },
+    { id: 6, name: "GEOFFREY KIRUMBA", role: "Full-Stack Developer", image: "/about.jpg", description: "Geo bridges frontend and backend development for seamless integration.",url:"https://www.linkedin.com/in/geoffrey-kirumba-0b0b3b1b/" },
   ];
 
  

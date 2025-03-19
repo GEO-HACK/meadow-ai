@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const CustomerEngagement = () => {
   return (
-    <div className="relative overflow-hidden py-20 bg-gray-900">
+    <div className="relative overflow-hidden py-20 bg-gray-950">
       {/* Glowing Background Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-500/20 blur-3xl opacity-40"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-blue-500/20 blur-3xl opacity-40"></div>
 
       <section className="relative z-10 text-center">
         {/* Section Title with Neon Glow */}

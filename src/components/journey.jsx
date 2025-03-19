@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const Journey = () => {
-  const router = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <section className=" bg-gradient-to-r from-green-800 to-green-600 text-white py-16 px-6 md:px-16 rounded-2xl shadow-lg">
@@ -23,7 +23,14 @@ const Journey = () => {
           we built an AI-driven platform that transforms agricultural intelligence.
         </p>
         <motion.button
-          onClick={() => router.push("/journey")}
+          onClick={() => {
+            navigate("/journey");
+            window.location.href= "/journey";
+
+           
+
+          }}
+
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-white text-green-700 px-6 py-3 rounded-full flex items-center gap-2 text-lg font-medium shadow-md hover:bg-gray-200 transition"

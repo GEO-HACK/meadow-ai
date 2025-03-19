@@ -21,7 +21,7 @@ const Landing = () => {
           <img
             src={image2}
             alt="Farmer with oranges"
-            className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+            className="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-lg"
           />
         </motion.div>
 

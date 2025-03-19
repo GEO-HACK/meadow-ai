@@ -20,10 +20,10 @@ const Journey = () => {
           <img
             src="/about.jpg"
             alt="Research and Discovery"
-            className="w-full rounded-lg shadow-lg"
+            className="w-full max-w-xs sm:max-w-sm lg:max-w-lg md:max-w-md rounded-lg shadow-lg"
           />
         </div>
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-semibold text-green-400 mb-4">
             Problem Discovery & Industry Research
           </h2>
@@ -110,7 +110,7 @@ const Journey = () => {
           {/* Right - Image Section */}
           <div className="md:w-1/2">
             <img
-              src="/ai-training.jpg"
+              src="/training.jpeg"
               alt="AI Model Training"
               className="w-full rounded-lg shadow-lg"
             />
@@ -136,7 +136,7 @@ const Journey = () => {
           transition={{ duration: 1 }}
         >
           <img 
-            src="/field-deployment.jpg" 
+            src="/deployment.png" 
             alt="AI Deployment in the Field" 
             className="w-full rounded-lg shadow-lg"
           />

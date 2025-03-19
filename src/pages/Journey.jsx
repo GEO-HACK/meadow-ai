@@ -11,8 +11,7 @@ const Journey = () => {
       <p className="text-center text-lg mb-12 max-w-2xl mx-auto">
         Agriculture is a cornerstone of many economies, yet numerous challenges
         persist, from unpredictable weather to inefficient resource allocation.
-        Our journey began with a mission to create an AI-driven platform that
-        empowers farmers with real-time insights.
+      
       </p>
 
       <section className="flex flex-col md:flex-row items-center gap-10">
@@ -112,7 +111,7 @@ const Journey = () => {
             <img
               src="/training.jpeg"
               alt="AI Model Training"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full sm:max-w-sm lg:max-w-lg md:max-w-md rounded-lg shadow-lg"
             />
           </div>
         </div>

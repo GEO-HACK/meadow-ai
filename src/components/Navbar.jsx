@@ -1,44 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
-  return (
-    <div className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
-      {/* Logo Section */}
-      <Link to="/">
-        <p className="text-3xl font-bold text-gray-800">
-          Meadow <span className="text-green-600">AI</span>
-        </p>
-      </Link>
+  const [isOpen, setIsOpen] = useState(false);
 
-      {/* Navigation Links */}
-      <div className="flex space-x-6">
-        <Link
-          to="/"
-          className="text-gray-700 hover:text-green-600 transition-colors font-medium"
-        >
-          Home
+  return (
+    <nav className="bg-white shadow-md  top-0 w-full z-50">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo Section */}
+        <Link to="/" className="font-bold text-3xl text-gray-800">
+          Meadow<span className="text-green-600">AI</span>
         </Link>
-        <Link
-          to="/about"
-          className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+
+        {/* Hamburger Menu for Mobile */}
+        <button
+          className="md:hidden text-gray-800 focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          About
-        </Link>
-        <Link
-          to="/journey"
-          className="text-gray-700 hover:text-green-600 transition-colors font-medium"
-        >
-          Journey
-        </Link>
-        <Link
-          to="/blog"
-          className="text-gray-700 hover:text-green-600 transition-colors font-medium"
-        >
-          Blog
-        </Link>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-6">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Journey", path: "/journey" },
+            { name: "Blog", path: "/blog" },
+          ].map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="text-gray-800 hover:text-green-600 transition-colors font-medium"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* Mobile Navigation (Toggled) */}
+      {isOpen && (
+        <div className="md:hidden bg-white shadow-lg flex flex-col items-center space-y-4 py-4">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Journey", path: "/journey" },
+            { name: "Blog", path: "/blog" },
+          ].map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="text-gray-800 hover:text-green-600 transition-colors font-medium"
+              onClick={() => setIsOpen(false)} // Close menu on click
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 };
 

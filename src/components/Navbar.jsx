@@ -8,10 +8,17 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md  top-0 w-full z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center gap-3">
+          <img
+           src="logo.png" 
+           alt="navbar logo image" 
+           className="w-10 h-10"
+           />
+          <Link to="/" className="font-bold text-3xl text-gray-800">
+            Meadow<span className="text-green-600">AI</span>
+          </Link>
+        </div>
         {/* Logo Section */}
-        <Link to="/" className="font-bold text-3xl text-gray-800">
-          Meadow<span className="text-green-600">AI</span>
-        </Link>
 
         {/* Hamburger Menu for Mobile */}
         <button

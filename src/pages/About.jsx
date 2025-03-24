@@ -65,10 +65,9 @@ const About = () => {
               mission
             </h1>
             <p className="text-gray-300 group-hover:text-white text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-              exercitationem iusto similique dicta eum voluptatem, quidem
-              debitis molestias nostrum, distinctio illo fugit nesciunt
-              aspernatur, ratione fuga? Laboriosam tempore tenetur sit!
+              To create AI systems that grow and adapt like natural ecosystems —
+              seamlessly integrating with human workflows to solve complex
+              challenges while nurturing ethical innovation.
             </p>
           </div>
 
@@ -81,10 +80,9 @@ const About = () => {
               vision
             </h1>
             <p className="text-gray-300 group-hover:text-white text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-              exercitationem iusto similique dicta eum voluptatem, quidem
-              debitis molestias nostrum, distinctio illo fugit nesciunt
-              aspernatur, ratione fuga? Laboriosam tempore tenetur sit!
+              "We develop intuitive AI tools that transform raw data into
+              actionable intelligence, prioritizing transparency, security, and
+              measurable impact for businesses and communities."
             </p>
           </div>
 
@@ -94,10 +92,9 @@ const About = () => {
               value
             </h1>
             <p className="text-gray-300 group-hover:text-white text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-              exercitationem iusto similique dicta eum voluptatem, quidem
-              debitis molestias nostrum, distinctio illo fugit nesciunt
-              aspernatur, ratione fuga? Laboriosam tempore tenetur sit!
+              Ethical AI grown transparently, built collaboratively, and
+              harvested responsibly—balancing innovation with human-centric
+              design
             </p>
           </div>
         </div>

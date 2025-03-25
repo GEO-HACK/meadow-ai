@@ -6,24 +6,25 @@ const Footer = () => {
   return (
     <footer className="bg-green-100 text-gray-800 p-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        
         {/* Brand Column */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <img 
-              src="logo.png" 
-              alt="Meadow AI" 
-              className="w-12 h-12"
-            />
+            <img src="logo.png" alt="Meadow AI" className="w-12 h-12" />
             <h3 className="text-2xl font-bold">
               Meadow <span className="text-green-600">AI</span>
             </h3>
           </div>
           <p className="italic">"Cultivating smarter futures with AI"</p>
           <div className="flex gap-4">
-            <FaLinkedin className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
-            <FaTwitter className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
-            <FaGithub className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
+            <Link to="#">
+              <FaLinkedin className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
+            </Link>
+            <Link to="#">
+              <FaTwitter className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
+            </Link>
+            <Link to="https://github.com/MeedowDev">
+              <FaGithub className="text-gray-600 hover:text-green-600 text-xl cursor-pointer" />
+            </Link>
           </div>
         </div>
 
@@ -37,17 +38,24 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-green-600 hover:underline">
+              <Link
+                to="/about"
+                className="hover:text-green-600 hover:underline"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/journey" className="hover:text-green-600 hover:underline">
+              <Link
+                to="/journey"
+                className="hover:text-green-600 hover:underline"
+              >
                 Journey
               </Link>
-            </li> <li>
+            </li>{" "}
+            <li>
               <Link to="/blog" className="hover:text-green-600 hover:underline">
-               Blog
+                Blog
               </Link>
             </li>
           </ul>
